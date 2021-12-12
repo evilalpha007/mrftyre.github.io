@@ -1,0 +1,454 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Calibri; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 40px 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: rgb(233, 230, 230) !important;
+}
+
+h3,
+h2 {
+  text-transform: capitalize;
+  font-size: 1.5rem !important;
+  display: inline-block;
+}
+
+header {
+  height: 12vh;
+  background-color: #ffff;
+}
+
+.container_part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: .7rem .5rem 0px .5rem;
+}
+
+.logo {
+  font-weight: bold;
+  color: rgb(41, 4 0, 40);
+}
+
+.sidebar{
+  font-size: 35px;
+  margin-right: 15px;
+}
+
+
+
+.search {
+  border: none;
+  outline: none;
+  background-color: rgb(224 224 224 / 60%);
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+.search_input {
+  background-color: rgb(224 224 224 / 60%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.far {
+  margin-left: 10px;
+}
+
+.cart_section {
+  display: flex;
+  justify-content: center;
+}
+
+.cart_item {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.opacity{
+opacity: 0.5 !important;
+cursor: pointer;
+
+}
+
+.opacity:hover {
+opacity: 1 !important;
+
+}
+
+/* **************ReCOMENED SECTION START ****  */
+
+.section-1{
+  margin: 1rem;
+} 
+
+
+.section_first {
+  padding: 0px 60px;
+}
+
+.first_part {
+  margin-top: 30px;
+}
+.second_part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_hero_para {
+  text-transform: capitalize;
+}
+.main_hero_para span {
+  padding: 5px;
+  border-radius: 50px;
+  margin: 12px;
+  font-weight: 600;
+  border: 1px solid #333;
+  cursor:pointer;
+}
+
+.cross {
+  padding: 10px;
+  font-weight: bold !important;
+}
+
+hr {
+  margin: 0px 25px;
+  height: 2px !important;
+}
+
+/* <!-- **************ReCOMENED SECTION  end **** --> */
+
+/* <!-- **************tyre SECTION start **** --> */
+.oer_image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sam {
+  display: flex;
+}
+
+#textbox{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.cart_space{
+  display: flex;
+    justify-content: flex-end;
+}
+
+.col-6{
+  font-size:12px !important;
+}
+
+/* <!-- **************tyre SECTION end **** --> */
+
+/* <!-- **************third SECTION - START **** --> */
+
+.secion-3 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr .5fr 1fr .7fr .7fr 1fr 1fr 1fr;
+  background-color: white;
+  margin:1rem;
+  padding:.7rem;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.sam_plus{
+  font-size:12px !important;
+
+}
+
+.pagination{
+  display: flex;
+      align-items: center;
+      align-content: center;
+      position: relative;
+      top: 8px;
+}
+
+.s-1{
+    text-decoration: underline;
+}
+
+.s-8 button{
+  padding: .3rem .7rem;
+  outline: none;
+  background-color:#FFA500;
+  border-radius: 20px;
+  border:none;
+  
+}
+
+.btn-508{
+  background-color: white !important;
+  border: 2px solid #FFA500 !important;
+}
+
+.secion-3 div{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+.s-4{
+  display: inline-table !important;
+} 
+
+
+/* <!-- **************third SECTION - end **** --> */
+
+/* <!-- **************load more SECTION - satrt **** --> */
+
+.loadmore_section{
+  height:10vh;
+}
+
+.loadmore{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.sam_btn{
+  width: 90%;
+  height:auto;
+  padding: 10px 0px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+/* <!-- **************load more SECTION - end **** --> */
+
+
+
+
+/* --------------------------- media query ------------------------------- */
+
+
+/* ******************************header start**************************** */
+
+@media only screen and (max-width:700px) {
+.main_heading{
+  display: none !important;
+
+}
+
+.second_part{
+  display: none;
+}
+
+.secion-3{
+display:block;
+
+}
+
+.search{
+  display:none;
+}
+
+.far{
+position:absolute !important;
+
+}
+
+
+}
+
+
+/* ------------------------- */
+
+/* ------------------------- for laptop ----------------------------------- */
+@media only screen and (max-width:1024px) {
+  
+  .secion-3 {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr .7fr .7fr .7fr .7fr .7fr;
+  }
+
+
+.s-8 button span{
+  display: none;
+
+  }
+  .s-8 button{
+    padding: .5rem 1.5rem ;
+  }
+
+
+
+
+}
+
+/* ------------------------------- for tablet  --------------------------------------------- */
+
+@media only screen and (max-width:768px) {
+
+  /* .main_heading{
+    display: none;
+  } */
+
+  .first_part{
+    text-align: center;
+  }
+
+  .main_heading span{
+    display: none;
+  }
+  
+  .secondary-container{
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+
+  .secion-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3 ,1fr);
+
+  }
+
+  .secion-3 div{
+    display: grid;
+  }
+
+  .s-1{
+    grid-column: 1/3;
+  }
+  
+
+  /* .s-2{
+    display: flex;
+    justify-content: flex-start !important;
+  } */
+
+  .s-2{
+    grid-column: 1/ 2;
+    grid-row: 2;
+  }
+
+  .s-3{
+    grid-row: 1;
+    grid-column: 3/5;
+  }
+
+  .s-4{
+    display: grid !important;
+    grid-row: 2;
+    grid-column: 2/ 3;
+  }
+
+  .s-5{
+    grid-column: 3/ 4;
+  }
+  
+
+  .s-7{
+    grid-column:4/5;
+    grid-row: 2;
+  }
+
+  .s-8{
+    grid-column: 2/5;
+  }
+ 
+
+  .s-8 button {
+    display: flex;
+    font-size: .7rem;
+    }
+
+    .s-8 button span{
+      display: flex;      
+      }
+
+}
+
+
+
+  /* *****************  mobile media query **************************** */ 
+
+
+
+
+@media only screen and (max-width: 620px) {
+
+h2{
+  font-size: 20px !important;
+    font-weight: bold;
+}
+
+.hide_para{
+  display:none;
+}
+
+.secondary-container {
+  display: block;
+ 
+}
+
+} 
+
+
+
+
+
+@media only screen and (max-width: 460px) {
+
+.cart_space{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hide_cart{
+  display: none !important;
+}
+
+.cart_hide_button{
+  padding: 15px 30px !important;
+}
+}
+
+
+
+
+@media only screen and (max-width:320px) {
+ .main_text{
+  font-size: 16px !important;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
