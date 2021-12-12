@@ -21,6 +21,20 @@ h2 {
   display: inline-block;
 }
 
+
+.green{
+color: rgb(27, 226, 37);
+}
+.orange{
+color: #FFA500;
+}
+
+.red{
+color: red;
+
+}
+
+
 header {
   height: 12vh;
   background-color: #ffff;
