@@ -5,6 +5,9 @@
   /* font-family: Calibri; */
 }
 
+
+
+
 body {
   width: 100%;
   height: 100vh;
@@ -19,6 +22,10 @@ h2 {
   text-transform: capitalize;
   font-size: 1.5rem !important;
   display: inline-block;
+}
+
+li{
+list-style: none;
 }
 
 
@@ -36,7 +43,7 @@ color: red;
 
 
 header {
-  height: 12vh;
+  height: 10vh;
   background-color: #ffff;
 }
 
@@ -46,6 +53,14 @@ header {
   align-items: center;
   cursor: pointer;
   padding: .7rem .5rem 0px .5rem;
+  position: fixed;
+    z-index: 1;
+    background: white;
+    width: 100%;
+}
+
+#main_text{
+  font-size:16px;
 }
 
 .logo {
@@ -56,7 +71,48 @@ header {
 .sidebar{
   font-size: 35px;
   margin-right: 15px;
+  margin-left: 15px;
 }
+
+.dropdown-account {
+  position: absolute;
+  width:215px;
+  left: -85px;
+  display:none;
+}
+
+.arrow{
+  position: absolute;
+  top: -20px;
+  z-index: 100;
+  font-size: 2rem;
+  left: 48%;
+}
+
+
+.dropdown-account div {
+  background-color: black;
+  text-align: left;
+  padding: .5rem 1.5rem;
+  border-top: 1px solid white;
+  color: white;
+  opacity: 0.8 !important;
+}
+
+
+
+.dropdown-menu{
+  background-color:black !important;
+  left: 60px !important;
+  min-width: 8rem !important;
+
+}
+
+.dropdown-menu li a{
+  color: white !important;
+  border-bottom:1px solid black !important;
+}
+
 
 
 
@@ -66,14 +122,44 @@ header {
   background-color: rgb(224 224 224 / 60%);
   margin-left: 10px;
   border-radius: 30px;
+  padding-left: 15px;
+  width: 20rem;
+  height: 2.2rem;
 }
 
+
 .search_input {
-  background-color: rgb(224 224 224 / 60%);
+  position: relative;
   border-radius: 50px;
   display: flex;
   align-items: center;
+  
 }
+
+
+.fa-search{
+  border-radius: 50%;
+  background: orange;
+  width: 27px;
+  height: 27px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  right: 0px;
+  width: 2.2rem;
+height: 2.2rem;
+}
+
+
+.rotate_arrow{
+transform: rotate(180deg) !important;
+}
+
+
+
+
+
 .far {
   margin-left: 10px;
 }
@@ -90,14 +176,18 @@ header {
 }
 
 .opacity{
-opacity: 0.5 !important;
 cursor: pointer;
+font-size: 25px !important;
 
 }
 
-.opacity:hover {
-opacity: 1 !important;
+.cart_item{
+  opacity:.6 !important;
+  position: relative;
+}
 
+.cart_item:hover{
+  opacity:1 !important;
 }
 
 /* **************ReCOMENED SECTION START ****  */
@@ -106,6 +196,9 @@ opacity: 1 !important;
   margin: 1rem;
 } 
 
+.flter_section{
+  display:flex;
+}
 
 .section_first {
   padding: 0px 60px;
@@ -117,7 +210,11 @@ opacity: 1 !important;
 .second_part {
   display: flex;
   justify-content: space-between;
+  margin-top:20px;
 }
+
+
+
 
 .main_hero_para {
   text-transform: capitalize;
@@ -129,7 +226,77 @@ opacity: 1 !important;
   font-weight: 600;
   border: 1px solid #333;
   cursor:pointer;
+  padding-left: 15px;
 }
+
+
+
+/* *********************popiularity  start********* */
+
+
+.popularity-center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dropdownMenuButton1{
+  background-color: #e9e6e6;
+  border: none;
+  color:black;
+  border: 1px solid #333;
+  border-radius: 50px;
+outline: none !important;
+}
+
+.dropdown-toggle::after{
+transform:rotate(180deg) !important;
+}
+
+.btn-check:focus + .btn-secondary, .btn-secondary:focus {
+  box-shadow: none !important;
+}
+
+
+/* #navbarDropdown{
+color: #333 !important;
+text-transform: capitalize;
+border-radius: 50px;
+} */
+
+
+.dropdown-menu{
+  left: 0 !important;
+  background-color: #ffff !important;
+}
+
+.dropdown-menu li a{
+  background-color: #ffff !important;
+  color: #333 !important;
+  border:none !important;
+  
+}
+
+.dropdown-menu li a:hover{
+background-color: #333 !important;
+color: #ffff !important;
+
+
+}
+
+
+.popularity{
+  font-weight:600;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+
+
+
+
+/* *********************popiularity end ********* */
+
 
 .cross {
   padding: 10px;
@@ -142,6 +309,22 @@ hr {
 }
 
 /* <!-- **************ReCOMENED SECTION  end **** --> */
+
+/* ----------------------  conter button css ------------------------------ */
+
+.page-item.active .page-link {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #e3bcbc !important;
+}
+
+.page-link {
+  color: #000 !important;
+  z-index: 0 !important;
+}
+
+/* ------------------------------------------------------------ */
+
 
 /* <!-- **************tyre SECTION start **** --> */
 .oer_image {
@@ -157,6 +340,7 @@ hr {
   width: 30px;
   height: 30px;
   text-align: center;
+  background-color: #d7d7c7 !important;
 }
 
 .cart_space{
@@ -255,6 +439,23 @@ hr {
 
 
 /* ******************************header start**************************** */
+
+@media only screen and (max-width:943px) {
+#main_text{
+  display: none;
+}
+
+.main_heading{
+  display: none !important;
+
+}
+}
+
+
+
+
+
+
 
 @media only screen and (max-width:700px) {
 .main_heading{
